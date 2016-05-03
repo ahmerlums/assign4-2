@@ -1,0 +1,11 @@
+-# in app/views/movies/find_same_director.html.haml
+
+%h2 Movies of director #{@director}
+
+%table
+  -@movies.each do |movie|
+    %tr
+      %td #{movie.title}
+      %td #{movie.rating}
+      %td #{movie.director}
+      %td #{movie.release_date}
